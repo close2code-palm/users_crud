@@ -60,7 +60,6 @@ class UserRepo:
         ef_q = f""" WHERE email LIKE '%{email_filter}%'""" if email_filter else ""
         ob_q = f""" ORDER BY {order_by.value}""" if order_by else ""
         gau_q = f"""SELECT * FROM users{ef_q}{ob_q};"""
-        print(gau_q)
         return await self._conn.fetch(gau_q)
 
 
