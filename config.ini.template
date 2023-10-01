@@ -1,0 +1,6 @@
+[pgsql]
+DB_NAME=back_test
+DB_USER=postgres
+DB_PWD=postgres
+DB_HOST=localhost
+DB_PORT=5432

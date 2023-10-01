@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "users-test-crud"
+version = "0.1.0"
+description = "test task for middle backend developer position"
+authors = ["Juxan <julyfortune101@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.103.2"
+asyncpg = "^0.28.0"
+pydantic = {extras = ["email"], version = "^2.4.2"}
+
+
+[tool.poetry.group.dev.dependencies]
+uvicorn = "^0.23.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
